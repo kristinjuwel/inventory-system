@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="963.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="machine.prob.machineproblem.StockController">
+    <ImageView fitHeight="540.0" fitWidth="963.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@STOCKS PANE.png" />
+    </ImageView>
+    <Pane layoutX="17.0" layoutY="131.0" prefHeight="375.0" prefWidth="176.0">
+        <Button mnemonicParsing="false" onAction="#home" styleClass="side_buttons" text="HOME" />
+        <Button layoutY="68.0" mnemonicParsing="false" onAction="#menu" styleClass="side_buttons" text="MENU" />
+        <Button layoutY="137.0" mnemonicParsing="false" onAction="#stocks" styleClass="side_buttons" text="STOCKS" />
+        <Button layoutY="267.0" mnemonicParsing="false" onAction="#report" styleClass="side_buttons" text="REPORT" />
+        <Button layoutY="334.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="126.0" styleClass="side_buttons" text="EXIT">
+        </Button>
+    </Pane>
+    <GridPane layoutX="274.0" layoutY="70.0" prefHeight="91.0" prefWidth="514.0" styleClass="stock_choices">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.99998779296874" minWidth="10.0" prefWidth="140.40001220703124" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.39996337890625" minWidth="10.0" prefWidth="122.40001220703124" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.60003662109375" minWidth="10.0" prefWidth="143.59998779296876" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.4000122070313" minWidth="10.0" prefWidth="152.40001220703124" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <RadioButton mnemonicParsing="false" onAction="#selectMeat" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Meat">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="stockChoices" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectNoodles" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Noodles" toggleGroup="$stockChoices" GridPane.columnIndex="1">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectCondiment" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Condiment" toggleGroup="$stockChoices" GridPane.columnIndex="2">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectSauce" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Sauce" toggleGroup="$stockChoices" GridPane.columnIndex="3">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectProduce" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Produce" toggleGroup="$stockChoices" GridPane.rowIndex="1">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectVegetable" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Vegetable" toggleGroup="$stockChoices" GridPane.rowIndex="2">
+            <font>
+                <Font size="10.0" />
+            </font></RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectDryIngredient" prefHeight="20.0" prefWidth="129.0" styleClass="stock_choices" text="Dry Ingredient" toggleGroup="$stockChoices" GridPane.rowIndex="3">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectPasta" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Pasta" toggleGroup="$stockChoices" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectRice" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Rice" toggleGroup="$stockChoices" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectDairy" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Dairy" toggleGroup="$stockChoices" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectFlavoring" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Flavoring" toggleGroup="$stockChoices" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectVinegar" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Vinegar" toggleGroup="$stockChoices" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectOil" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Oil" toggleGroup="$stockChoices" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectStock" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Stock" toggleGroup="$stockChoices" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectBeverage" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Beverage" toggleGroup="$stockChoices" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectMerch" prefHeight="18.0" prefWidth="107.0" styleClass="stock_choices" text="Merch" toggleGroup="$stockChoices" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </RadioButton>
+    </GridPane>
+    <Label fx:id="itemName" alignment="CENTER" layoutX="554.0" layoutY="190.0" prefHeight="35.0" prefWidth="362.0" styleClass="disp_name" text="[Item Name]" />
+    <Label fx:id="selectedCategory" alignment="CENTER" layoutX="254.0" layoutY="190.0" prefHeight="35.0" prefWidth="256.0" styleClass="disp_name" text="[Selected Filter]" />
+    <AnchorPane fx:id="stockTablePane" layoutX="282.0" layoutY="259.0" prefHeight="200.0" prefWidth="200.0" styleClass="menu_clist" />
+    <ImageView fx:id="imageView" fitHeight="128.0" fitWidth="130.0" layoutX="768.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" />
+    <Button layoutX="832.0" layoutY="419.0" mnemonicParsing="false" onAction="#addUsage" prefHeight="30.0" prefWidth="80.0" styleClass="prep_button" text="USAGE" />
+    <Button fx:id="deleter" layoutX="762.0" layoutY="479.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="26.0" prefWidth="142.0" styleClass="stocks_delete" text="DELETE ITEM" />
+    <Spinner fx:id="usageSpinner" layoutX="764.0" layoutY="416.0" prefHeight="30.0" prefWidth="58.0" />
+    <Button layoutX="831.0" layoutY="382.0" mnemonicParsing="false" onAction="#restock" prefHeight="30.0" prefWidth="80.0" styleClass="prep_button" text="ADD" />
+    <Spinner fx:id="addSpinner" layoutX="764.0" layoutY="378.0" prefHeight="30.0" prefWidth="58.0" />
+    <GridPane layoutX="782.0" layoutY="70.0" prefHeight="91.0" prefWidth="142.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Button mnemonicParsing="false" onAction="#addWindow" prefHeight="26.0" prefWidth="107.0" styleClass="stocks_btn" text="ADD NEW" />
+            <Button mnemonicParsing="false" onAction="#bulkAdd" prefHeight="30.0" prefWidth="107.0" styleClass="stocks_btn" text="BULK ADD" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#addExisting" prefHeight="30.0" prefWidth="107.0" styleClass="stocks_btn" text="ADD EXISTING" GridPane.rowIndex="1" />
+        </children>
+    </GridPane>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fffae3" height="274.0" layoutX="565.0" layoutY="236.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="186.0" />
+   <Label layoutX="572.0" layoutY="267.0" styleClass="sku_text" text="Item" />
+   <Label layoutX="572.0" layoutY="293.0" styleClass="sku_text" text="Category" />
+   <Label layoutX="572.0" layoutY="318.0" styleClass="sku_text" text="Quantity" />
+   <Label layoutX="572.0" layoutY="340.0" styleClass="sku_text" text="Unit" />
+   <Label layoutX="572.0" layoutY="363.0" styleClass="sku_text" text="Brand" />
+   <Label layoutX="572.0" layoutY="386.0" styleClass="sku_text" text="Color" />
+   <Label layoutX="572.0" layoutY="410.0" prefHeight="18.0" prefWidth="78.0" styleClass="sku_text" text="Description" />
+   <Label layoutX="572.0" layoutY="243.0" styleClass="sku_text" text="SKU" />
+   <Label fx:id="itemSKU" alignment="CENTER" layoutX="646.0" layoutY="243.0" prefHeight="16.0" prefWidth="98.0" styleClass="sku_text" />
+   <Label fx:id="itemItem" alignment="CENTER" layoutX="646.0" layoutY="267.0" prefHeight="16.0" prefWidth="98.0" styleClass="sku_text" />
+   <Label fx:id="itemCategory" alignment="CENTER" layoutX="646.0" layoutY="293.0" prefHeight="16.0" prefWidth="98.0" styleClass="sku_text" />
+   <Label fx:id="itemQuantity" alignment="CENTER" layoutX="646.0" layoutY="318.0" prefHeight="16.0" prefWidth="98.0" styleClass="sku_text" />
+   <Label fx:id="itemUnit" alignment="CENTER" layoutX="646.0" layoutY="340.0" prefHeight="16.0" prefWidth="98.0" styleClass="sku_text" />
+   <Label fx:id="itemBrand" alignment="CENTER" layoutX="646.0" layoutY="364.0" prefHeight="16.0" prefWidth="98.0" styleClass="sku_text" />
+   <Label fx:id="itemColor" alignment="CENTER" layoutX="646.0" layoutY="386.0" prefHeight="16.0" prefWidth="98.0" styleClass="sku_text" />
+   <Label fx:id="itemDescription" alignment="CENTER" layoutX="646.0" layoutY="411.0" prefHeight="16.0" prefWidth="98.0" styleClass="sku_text" />
+   <Label layoutX="572.0" layoutY="436.0" styleClass="sku_text" text="Initial Entry" />
+   <Label fx:id="itemEntry" alignment="CENTER" layoutX="646.0" layoutY="436.0" prefHeight="16.0" prefWidth="98.0" styleClass="sku_text" />
+   <Label layoutX="572.0" layoutY="460.0" styleClass="sku_text" text="Usage" />
+   <Label fx:id="itemUsage" alignment="CENTER" layoutX="646.0" layoutY="459.0" prefHeight="16.0" prefWidth="98.0" styleClass="sku_text" />
+   <Label layoutX="572.0" layoutY="484.0" styleClass="sku_text" text="Added" />
+   <Label fx:id="itemAdded" alignment="CENTER" layoutX="646.0" layoutY="484.0" prefHeight="16.0" prefWidth="98.0" styleClass="sku_text" />
+</AnchorPane>

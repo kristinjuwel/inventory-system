@@ -1,0 +1,68 @@
+MTCH-7888,Chicken Thigh,Meat,30.0,kg,Monterey,Rosy Red,Fresh
+MTPS-4906,Pork Chops,Meat,27.0,kg,Monterey,Rosy Red,Fresh
+MTDA-9060,Drained Tuna,Meat,30.0,kg,Hagoromo,White,In Can
+MTHL-1473,Hamachi Yellow Tail,Meat,30.0,kg,Crane Bay,Yellow,Frozen
+MTCS-3342,Crabsticks,Meat,60.0,kg,Ichiban,Red,Frozen
+MTHM-3314,Ham,Meat,30.0,kg,Monterey,Red,Frozen
+MTGK-1537,Ground Pork,Meat,29.5,kg,Monterey,Rosy Red,Fresh
+MTSU-4387,Silken Tofu,Meat,30.0,kg,mori-nu,White,Soft Tofu
+PEMK-2814,Milk,Produce,29.6,L,Anchor,White,Full Cream
+PEEG-4251,Egg,Produce,4.0,pieces,Dizon's Farm,Brown,Organic
+VECE-7543,Cabbage,Vegetable,29.8,kg,Dizon's Farm,Green,Fresh
+VECT-6532,Carrot,Vegetable,29.9,kg,Dizon's Farm,Orange,Fresh
+VEGC-3370,Garlic,Vegetable,29.9,kg,Dizon's Farm,White,Fresh
+VEON-5644,Onion,Vegetable,29.9,kg,Dizon's Farm,Purple,Fresh
+VEMM-0247,Mushroom,Vegetable,30.0,kg,Dizon's Farm,Brown,Fresh
+VECR-3250,Cucumber,Vegetable,30.0,kg,Dizon's Farm,Green,Fresh
+VEJT-7277,Japanese Eggplant,Vegetable,30.0,kg,Dizon's Farm,Purple,Fresh
+VEGR-7620,Ginger,Vegetable,30.0,kg,Dizon's Farm,Brown,Fresh
+VELN-4822,Lemon,Vegetable,30.0,kg,Dizon's Farm,Yellow,Fresh
+VEAO-2398,Avocado,Vegetable,30.0,kg,Dizon's Farm,Green,Fresh
+DTPS-4640,Panko Bread Crumbs,Dry Ingredient,30.0,kg,Roland,White,Packed
+DTAR-3467,All-Purpose Flour,Dry Ingredient,29.4,kg,Maya,White,Packed
+DTBR-2897,Baking Powder,Dry Ingredient,29.8,kg,Calumet,White,Packed
+DTJR-2800,Japanese Rice Flour,Dry Ingredient,30.0,kg,Nippon Flour Mills,White,Packed
+DTSO-8064,Shiratamako,Dry Ingredient,30.0,kg,Tamasan,White,Packed
+DTCH-8138,Cornstarch,Dry Ingredient,30.0,kg,Cream,White,Packed
+DTMR-4718,Matcha Green Tea Powder,Dry Ingredient,30.0,kg,Jade Leaf,Green,Packed
+DTPH-0928,Potato Starch,Dry Ingredient,30.0,kg,Windmill,White,Packed
+NSCS-3002,Chukamen Noodles,Noodles,30.0,kg,Maruchan,Black,Packed
+PAWS-6672,Wonton Wrappers,Pasta,29.9,kg,Blue Dragon,White,Frozen
+RESE-2760,Sushi Rice,Rice,30.0,kg,Nishiki,White,Raw
+DYIM-6974,Ice Cream,Dairy,30.0,kg,Selecta,White,Vanilla
+DYUR-1424,Unsalted Butter,Dairy,30.0,kg,Anchor,Yellow,Chilled
+CSKT-1750,Kosher Salt,Condiment,30.0,kg,Diamond Crystal,White,Small Container
+CSST-8065,Salt,Condiment,30.0,kg,McCormick,White,Small Container
+CSBR-4624,Black Pepper,Condiment,30.0,kg,McCormick,Black,Small Container
+CSKP-3532,Ketchup,Condiment,30.0,kg,Heinz,Red,Small Container
+CSWI-0825,Wasabi,Condiment,30.0,kg,Yoko,Green,Small Container
+CSBS-2268,Bonito Flakes,Condiment,30.0,kg,Yamaki,Brown,Small Container
+CSSA-5107,Sriracha,Condiment,30.0,kg,Huy Fong,Red,Small Container
+CSGN-9271,Green Onion,Condiment,30.0,kg,Dizon's Farm,Green,Small Container
+CSWR-5626,White Sugar,Condiment,29.6,kg,Royal Jade,White,Packed
+CSCR-9159,Cayenne Pepper,Condiment,30.0,kg,McCormick,Red,Small Container
+CSSE-4202,Spicy Mayonnaise,Condiment,30.0,kg,Kewpie,White,Small Container
+CSME-4946,Mayonnaise,Condiment,30.0,kg,Kewpie,White,Small Container
+CSTE-2822,Tomato Paste,Condiment,30.0,kg,Del Monte,Red Orange,Small Container
+CSSS-8428,Sesame Seeds,Condiment,30.0,kg,Goldfish,White,Small Container
+CSME-7507,Miso Paste,Condiment,30.0,kg,Marukome Boy,White,Small Container
+CTSE-0999,Soy Sauce,Condiment,29.8,L,Kikkoman,Black,Small Container
+CSSE-8931,Sake,Condiment,30.0,L,Dassai 45,White,Medium
+FGVT-1561,Vanilla Extract,Flavoring,29.8,L,McCormick,White,Small
+FGNI-1084,Nori,Flavoring,60.0,L,Bibigo,Green,Packed
+VRRR-0708,Rice Vinegar,Vinegar,29.9,L,Kikkoman,White,Bottled
+OLSL-3334,Sesame Oil,Oil,29.9,L,Kadoya,Colorless,Bottled
+OLVL-6755,Vegetable Oil,Oil,29.9,L,Golden Fiesta,Colorless,Bottled
+OLCL-8013,Canola Oil,Oil,29.8,L,Golden Fiesta,Colorless,Bottled
+SETE-6567,Tonkatsu Sauce,Sauce,30.0,L,Bulldog,Black,Bottled
+SKDK-7073,Dashi Soup Stock,Stock,30.0,kg,Ajinomoto Hondashi,Colorless,Packed
+BEBR-4121,Bottled Water,Beverage,30.0,L,Summit,Colorless,Bottled
+BECE-3031,Coke,Beverage,30.0,L,Coca Cola,Black,Coke In Can
+BECE-4574,Coffee,Beverage,30.0,L,Lotte,Black,Coffee In Can
+BEPE-2342,Pineapple Juice,Beverage,30.0,L,Del Monte,Yellow,Juice In Can
+BECE-4707,Cranberry Juice,Beverage,30.0,L,Ocean Spray,Red,Juice In Can
+MESG-4139,Shiba Dog Tote Bag,Merch,30.0,pieces,Juroujin,Skintone,Large
+MEMT-1342,Made in Japan Shirt,Merch,30.0,pieces,Juroujin,Black,Freesize
+MECN-0930,Cherry Blossom Fan,Merch,30.0,pieces,Juroujin,White,Small
+MEJG-5707,Japanese Kitty Tote Bag,Merch,30.0,pieces,Juroujin,Skintone,Medium
+EEST-9089,Salt,eme,19,secret,ewan,white,cute ni currie

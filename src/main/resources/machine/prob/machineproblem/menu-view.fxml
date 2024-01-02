@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="540.0" prefWidth="963.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="machine.prob.machineproblem.MenuController">
+    <ImageView fitHeight="540.0" fitWidth="963.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@MENU PANE.png" />
+    </ImageView>
+    <Pane layoutX="17.0" layoutY="131.0" prefHeight="375.0" prefWidth="176.0">
+        <Button fx:id="home_p" mnemonicParsing="false" onAction="#home" styleClass="side_buttons" text="HOME" />
+        <Button fx:id="menu_p" layoutY="68.0" mnemonicParsing="false" onAction="#menu" styleClass="side_buttons" text="MENU" />
+        <Button fx:id="stock_p" layoutY="137.0" mnemonicParsing="false" onAction="#stocks" styleClass="side_buttons" text="STOCKS" />
+        <Button fx:id="report_p" layoutY="267.0" mnemonicParsing="false" onAction="#report" styleClass="side_buttons" text="REPORT" />
+        <Button fx:id="quit" layoutY="334.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="126.0" styleClass="side_buttons" text="EXIT">
+        </Button>
+    </Pane>
+    <GridPane layoutX="282.0" layoutY="88.0" prefHeight="71.0" prefWidth="652.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.8000244140625" minWidth="10.0" prefWidth="215.200048828125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.39996337890628" minWidth="10.0" prefWidth="231.99993896484378" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.60003662109375" minWidth="10.0" prefWidth="160.00006103515625" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="41.799993896484374" minHeight="10.0" prefHeight="38.599981689453124" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="32.200018310546874" minHeight="10.0" prefHeight="32.200018310546874" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <RadioButton mnemonicParsing="false" onAction="#selectAppetizer" prefHeight="23.0" prefWidth="177.0" styleClass="menu_choices" text="Appetizer">
+            <toggleGroup>
+                <ToggleGroup fx:id="menu_choices" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" onAction="#selectDessert" prefHeight="23.0" prefWidth="169.0" styleClass="menu_choices" text="Dessert" toggleGroup="$menu_choices" GridPane.rowIndex="1" />
+        <RadioButton mnemonicParsing="false" onAction="#selectMainCourse" prefHeight="26.0" prefWidth="168.0" styleClass="menu_choices" text="Main Course" toggleGroup="$menu_choices" GridPane.columnIndex="1" />
+        <RadioButton mnemonicParsing="false" onAction="#selectBeverage" prefHeight="23.0" prefWidth="150.0" styleClass="menu_choices" text="Beverage" toggleGroup="$menu_choices" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <RadioButton mnemonicParsing="false" onAction="#selectSideDish" prefHeight="23.0" prefWidth="149.0" styleClass="menu_choices" text="Side Dish" toggleGroup="$menu_choices" GridPane.columnIndex="2" />
+        <RadioButton mnemonicParsing="false" onAction="#selectMerch" prefHeight="23.0" prefWidth="134.0" styleClass="menu_choices" text="Merch" toggleGroup="$menu_choices" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    </GridPane>
+    <Label fx:id="recipeName" alignment="CENTER" layoutX="554.0" layoutY="196.0" prefHeight="35.0" prefWidth="363.0" styleClass="disp_name" text="[Recipe Name]" />
+    <Pane layoutX="721.0" layoutY="449.0" prefHeight="26.0" prefWidth="200.0">
+        <Button layoutX="100.0" layoutY="2.0" mnemonicParsing="false" onAction="#prepareFood" prefHeight="23.0" prefWidth="90.0" styleClass="prep_button" text="PREPARE" />
+        <Spinner fx:id="mySpinner" editable="true" layoutX="10.0" layoutY="1.0" prefHeight="25.0" prefWidth="70.0" />
+    </Pane>
+    <Label fx:id="select" alignment="CENTER" layoutX="254.0" layoutY="190.0" prefHeight="35.0" prefWidth="256.0" styleClass="disp_name" text="[Selected Filter]" />
+    <AnchorPane fx:id="tablePane" layoutX="282.0" layoutY="232.0" prefHeight="253.0" prefWidth="200.0" styleClass="menu_clist" />
+    <ImageView fx:id="menuImage" fitHeight="173.0" fitWidth="175.0" layoutX="720.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true" />
+    <TextArea fx:id="ingredientList" layoutX="565.0" layoutY="241.0" prefHeight="236.0" prefWidth="142.0" styleClass="ing_list" text="INGREDIENT LIST:" wrapText="true">
+    </TextArea>
+   <Label layoutX="723.0" layoutY="414.0" prefHeight="35.0" prefWidth="150.0" styleClass="disp_name" text="AVAILABLE:" />
+   <Label fx:id="availableFood" layoutX="862.0" layoutY="413.0" prefHeight="35.0" prefWidth="56.0" styleClass="disp_name" text="0" />
+</AnchorPane>

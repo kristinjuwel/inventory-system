@@ -1,0 +1,374 @@
+@font-face {
+    font-family: "Raleway SemiBold";
+    src: url("Raleway-SemiBold.ttf");
+}
+
+@font-face{
+    font-family: "Raleway";
+    src: url("Raleway-Regular.ttf");
+}
+
+.home_page
+{
+    -fx-background-radius: 100px;
+    -fx-border-radius: 100px;
+    -fx-alignment: center;
+    -fx-background-color: #ad1430;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-font-size: 25pt;
+    -fx-font-family: "Raleway SemiBold";
+}
+
+.home_page:hover
+{
+    -fx-background-color: #F46D6F;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.side_buttons
+{
+    -fx-background-radius: 100px;
+    -fx-border-radius: 100px;
+    -fx-pref-height: 40px;
+    -fx-pref-width: 175px;
+    -fx-background-color: #FFFAE3;
+    -fx-alignment: center;
+    -fx-text-fill: #ad1430;
+    -fx-text-alignment: center;
+    -fx-font-size: 13pt;
+    -fx-font-family: "Raleway SemiBold";
+}
+
+.side_buttons:hover
+{
+    -fx-background-color: #F46D6F;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.menu_choices
+{
+    -fx-text-alignment: center;
+    -fx-font-size: 13pt;
+    -fx-text-fill: #ad1430;
+    -fx-font-family: "Raleway";
+}
+
+.stock_choices
+{
+    -fx-text-alignment: center;
+    -fx-font-size: 10pt;
+    -fx-text-fill: #ad1430;
+    -fx-font-family: "Raleway";
+    -fx-cursor: hand;
+}
+
+
+.prep_button
+{
+    -fx-background-radius: 100px;
+    -fx-border-radius: 100px;
+    -fx-pref-height: 20px;
+    -fx-pref-width: 70px;
+    -fx-background-color: #FFFAE3;
+    -fx-alignment: center;
+    -fx-text-fill: #ad1430;
+    -fx-text-alignment: center;
+    -fx-font-size: 9pt;
+    -fx-font-family: "Raleway";
+}
+
+.prep_button:hover
+{
+    -fx-background-color: #FF9091;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.disp_name
+{
+    -fx-text-alignment: center;
+    -fx-font-size: 18pt;
+    -fx-text-fill: #FFFAE3;
+    -fx-font-weight: bold;
+}
+
+.ing_list
+{
+    -fx-control-inner-background:#D15254;
+    -fx-text-fill: #FFFAE3;
+    -fx-font-family: "Raleway";
+    -fx-font-size: 9pt;
+    -fx-border-color: #F46D6F;
+    -fx-border-radius: 10pt;
+}
+
+.text-area .scroll-bar:vertical {
+   -fx-background-color: transparent;
+   -fx-border-color:derive(gray,80%);
+   -fx-background-radius: 1em;
+   -fx-border-radius:1em;
+}
+.text-area .scroll-bar:vertical .thumb {
+   -fx-background-color:#ad1430;
+   -fx-background-insets: 0, 0, 0;
+   -fx-background-radius: 0em;
+}
+
+.text-area .increment-button ,.text-area .decrement-button {
+   -fx-background-color:transparent;
+   -fx-border-color:derive(black,80%);
+}
+
+
+.menu_clist
+{
+    -fx-control-inner-background:transparent;
+    -fx-border-radius: 10px;
+    -fx-text-fill: #ad1430;
+    -fx-font-family: "Raleway";
+}
+
+.menu_clist .column-header
+{
+    -fx-background-color: #AD1430;
+    -fx-background-radius: 10px;
+    -fx-font-family: "Raleway SemiBold";
+}
+
+.menu_clist .column-header .label{
+  -fx-text-fill: #FFFAE3;
+}
+
+.radio-button:selected .radio .dot {
+    -fx-background-color:#D15254;
+    -fx-background-insets: 0;
+    -fx-cursor: hand;
+}
+
+.report_table
+{
+    -fx-background-color: #FFFAE3;
+    -fx-font-family: "Raleway";
+    -fx-cursor: hand;
+    -fx-border-radius: 5px;
+}
+
+.report_table .column-header
+{
+    -fx-background-color: #AD1430;
+    -fx-font-family: "Raleway SemiBold";
+}
+
+.report_table .column-header .label{
+    -fx-text-fill: #FFFAE3;
+}
+
+.report_table-view .column-header .label: hover{
+    -fx-text-fill: #00885a;
+}
+
+
+.report_table-view .table-cell{
+    -fx-border-color: transparent transparent transparent transparent;
+    -fx-padding: 2 0 2 10px;
+    -fx-background-radius: 10px;
+    -fx-alignment: CENTER-LEFT;
+
+}
+.table-row-cell: hover {
+    -fx-background-color: #FFF0B3;
+}
+.table-row-cell: odd{
+    -fx-background-color: transparent;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-cell-size: 50px;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:filled:hover {
+    -fx-background-color: #FFF0B3;
+    -fx-background-radius: 8px;
+}
+
+.table-row-cell: even{
+    -fx-background-color: transparent;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+    -fx-cell-size: 50px;
+}
+
+.table-cell {
+    -fx-text-fill: #000000 ;
+    -fx-background-radius: 10px;
+
+ }
+
+.table-view:focused {
+  -fx-background-color: #FFFAE3;
+  -fx-box-border: transparent;
+  -fx-control-inner-background: transparent;
+  -fx-background-insets: -1.4, 0, 1;
+  -fx-background-radius: 10px;
+  /*....*/
+  -fx-padding: 1; /* 0.083333em; */
+}
+
+.table-row-cell:filled:selected {
+  	-fx-background-color: #FFE475;
+ 	-fx-background-insets: 0.0;
+ 	-fx-background-radius: 8px;
+}
+
+.red-column.table-cell {
+    -fx-padding: 0.5em;
+    -fx-border-color: transparent -fx-box-border transparent transparent;
+    -fx-font: 13px "Arial";
+    -fx-text-fill: red;
+}
+
+
+.table-row-cell:filled:selected .table-cell {
+	-fx-text-fill: black;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 1;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom, #AB0422, #AB0422);
+}
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #AB0422, #AB0422);
+}
+
+.table-view .column-resize-line {
+    -fx-background-color: #0e9263;
+}
+
+.table-view .column-drag-header,
+.table-view .column-overlay {
+    -fx-background-color: #e4f3ee;
+}
+
+
+.add_sku
+{
+    -fx-background-color: #FFFAE3;
+}
+
+.sku_text
+{
+    -fx-text-fill: #ad1430;
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 10pt;
+}
+
+.sku_input
+{
+    -fx-text-fill: #FF9091;
+    -fx-font-family: "Raleway";
+    -fx-font-size: 10pt;
+}
+
+.stocks_btn
+{
+    -fx-background-radius: 100px;
+    -fx-border-radius: 100px;
+    -fx-pref-height: 20px;
+    -fx-pref-width: 120px;
+    -fx-background-color: #ad1430;
+    -fx-alignment: center;
+    -fx-text-fill: #FFFAE3;
+    -fx-text-alignment: center;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Raleway";
+    -fx-cursor: hand;
+}
+
+.stocks_btn:hover
+{
+    -fx-background-color: #F46D6F;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.export_btn
+{
+    -fx-background-radius: 100px;
+    -fx-border-radius: 100px;
+    -fx-pref-height: 20px;
+    -fx-pref-width: 140px;
+    -fx-background-color: #ad1430;
+    -fx-alignment: center;
+    -fx-text-fill: #FFFAE3;
+    -fx-text-alignment: center;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Raleway";
+    -fx-cursor: hand;
+}
+
+.stocks_delete
+{
+    -fx-background-radius: 100px;
+    -fx-border-radius: 100px;
+    -fx-pref-height: 20px;
+    -fx-pref-width: 142px;
+    -fx-background-color: #FFFAE3;
+    -fx-alignment: center;
+    -fx-text-fill: #ad1430;
+    -fx-text-alignment: center;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Raleway";
+    -fx-cursor: hand;
+}
+
+.stocks_delete:hover
+{
+    -fx-background-color: #FF9091;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.spinner
+{
+    -fx-font-family: "Raleway";
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+	-fx-background-color: #FFEFA7;
+	-fx-background-radius: 0;
+}
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+	-fx-background-color: #F8D845;
+	-fx-cursor: hand;
+}
+
+.spinner .increment-arrow-button .increment-arrow,
+.spinner .decrement-arrow-button .decrement-arrow {
+	-fx-background-color: #F46D6F;
+}
+
+.spinner .increment-arrow-button:hover:pressed,
+.spinner .decrement-arrow-button:hover:pressed,
+.spinner .increment-arrow-button:pressed,
+.spinner .decrement-arrow-button:pressed {
+	-fx-background-color: #ad1430;
+}
+
