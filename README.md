@@ -1,4 +1,4 @@
-Juroujin Inventory Management System
+**<center>Juroujin Inventory Management System</center>**
 
 The Juroujin Inventory Management System is a Java-based application designed for restaurants to efficiently track and manage inventory. Developed using JavaFX, SceneBuilder, and CSS, it offers an intuitive GUI for seamless navigation. Features include inventory management, recipe tracking, SKU generation, and CSV file handling. Users can add, edit, and delete items, with automatic SKU generation and quantity management. Bulk import/export capabilities streamline data handling. Real-time tracking and low stock alerts ensure timely replenishment. This system optimizes restaurant operations, reducing manual effort and facilitating informed decision-making.
 
